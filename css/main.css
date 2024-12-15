@@ -1,0 +1,165 @@
+
+
+body{
+    font-family: "Comfortaa", sans-serif;
+    background-color: var(--color-4);
+    color: var(--color-w);
+}
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-8);
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--color-6);
+}
+
+
+:root {
+    --color-1: #272729;
+    --color-2: #3A497B;
+    --color-3: #0D6EFD;
+    --color-4: #272B30;
+    --color-5: #212529;
+    --color-6: #32383E;
+    --color-7: #0099CC;
+    --color-8: #000000;
+    --color-b: #000000;
+    --color-w: #FFFFFF;
+ }
+
+ .fs-20 {
+    font-size: 20px;
+ }
+ .fs-12 {
+    font-size: 12px;
+ }
+
+ nav {
+    background-color: var(--color-2);
+    
+ }
+
+ .navbar-brand{
+    display: flex;
+    align-items: center;
+
+ }
+
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: "Roboto Mono", monospace;
+    color: #FFFFFF;
+
+}
+
+.nav-item .nav-link.active, .nav-item .nav-link:hover {
+    color:var(--color-7);
+    transition: color 0.5s;
+}
+.nav-link:focus{
+    color: var(--color-7);
+}
+.navbar-nav {
+
+    --bs-nav-link-color:var(--color-w);
+
+}
+
+
+.game-card{
+
+    border: 1px solid var(--color-5);
+    transition: all 0.5s;
+    cursor: pointer;
+    /* height: 340px; */
+
+}
+.game-card-image  {
+    filter: grayscale(80%);
+    transition: all 0.5s;
+}
+.game-card:hover {
+
+    transform: scale(1.08);
+    
+}
+.game-card:hover .game-card-image {
+
+    filter: grayscale(0%);
+
+}
+
+.game-card-footer{
+
+    border: 1px solid var(--color-5);
+
+}
+.game-footer{
+
+    background-color: var(--color-6);
+    color: var(--color-w);
+    font-size: 10px;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border:7px solid var(--color-6);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation .8s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color:var(--color-2) transparent;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
